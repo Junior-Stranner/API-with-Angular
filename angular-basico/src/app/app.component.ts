@@ -6,13 +6,16 @@ import { Componente02Component } from "./componente02-Event-Binding/componente02
 import { Componente03Component } from "./componente03-Property-Binding-imagem/componente03.component";
 import { Componente04Component } from "./componente04-Diretiva-ngIf/componente04.component";
 import { Componente05Component } from "./componente05/componente05.component";
+import { Componente06Component } from "./componente06-Diretiva-ngSwitch/componente06.component";
+import { Componente07Component } from "./componente07-Diretiva-ngStyle-ngClass/componente07.component";
+import { Componente08Component } from "./componente08/componente08.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, Componente01Component, Componente02Component, Componente03Component, Componente04Component, Componente05Component]
+    imports: [CommonModule, RouterOutlet, Componente01Component, Componente02Component, Componente03Component, Componente04Component, Componente05Component, Componente06Component, Componente07Component, Componente08Component]
 })
 export class AppComponent {
   title = 'angular-basico';
