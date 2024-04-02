@@ -8,7 +8,7 @@ import { Componente04Component } from "./componente04-Diretiva-ngIf/componente04
 import { Componente05Component } from "./componente05/componente05.component";
 import { Componente06Component } from "./componente06-Diretiva-ngSwitch/componente06.component";
 import { Componente07Component } from "./componente07-Diretiva-ngStyle-ngClass/componente07.component";
-import { Componente08Component } from "./componente08/componente08.component";
+import { Componente08Component } from "./componente08-Control-Flow-Condicional-For-switch/componente08.component";
 
 @Component({
     selector: 'app-root',
