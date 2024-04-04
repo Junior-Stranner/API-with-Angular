@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Pessoa } from '../modelo/Pessoa';
 
 @Component({
   selector: 'app-projeto-angular',
@@ -16,4 +17,10 @@ formulario = new FormGroup({
   idade  : new FormControl(null,[Validators.required, Validators.min(0),Validators.max(120)]),
   cidade : new FormControl('',[Validators.required, Validators.minLength(3)])
 });
+
+//Visibilidade do botôes
+btnCadastrar:boolean = true;
+
+//Vetor 
+vetor:Pessoa[] = [];
 }

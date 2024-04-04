@@ -26,5 +26,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+required and touched validation
+![alt text](<Tabela cadastro e lista. validacoes.png>)
 
+If a validation is true , he disabled a button
+![alt text](<Validacao botao desabelita .png>)
 
+visibility just Cadastrar , because this moment you can´t , change ,remove or updating
+![alt text](<visibilidade só do Cadastro.png>)

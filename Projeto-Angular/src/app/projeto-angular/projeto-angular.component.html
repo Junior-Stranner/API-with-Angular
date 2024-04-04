@@ -36,10 +36,26 @@
     <input type="text"   name="nome"       placeholder="Nome"    formControlName="nome"   class="form-control">
     <input type="number" name="idade"      placeholder="Idade"   formControlName="idade"  class="form-control">
     <input type="text"   name="cidade"     placeholder="Cidade"  formControlName="cidade" class="form-control">
-    <input type="button" value="Cadastrar" class="btn btn-primary">
-    <input type="button" value="Alterar"   class="btn btn-warning">
-    <input type="button" value="Remover"   class="btn btn-danger">
-    <input type="button" value="Cancelar"  class="btn btn-secondary">
+
+    <input type="button" value="Cadastrar" class="btn btn-primary" [disabled]="formulario.get('nome').hasError('required') 
+    ||
+    formulario.get('nome').hasError('minlength')
+    ||
+    formulario.get('idade').hasError('required') 
+    || 
+    formulario.get('nome').hasError('min') 
+    ||
+    formulario.get('nome').hasError('max') 
+    ||
+    formulario.get('cidade').hasError('required') 
+    || 
+    formulario.get('cidade').hasError('minlength')">
+
+    <input type="button" value="Alterar"  *ngIf="!btnCadastrar" class="btn btn-warning">
+    <input type="button" value="Remover"  *ngIf="!btnCadastrar"  class="btn btn-danger">
+    <input type="button" value="Cancelar" *ngIf="!btnCadastrar" class="btn btn-secondary">
+
+   
 </form>
 
 <table class="table">
