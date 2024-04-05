@@ -34,3 +34,7 @@ If a validation is true , he disabled a button
 
 visibility just Cadastrar , because this moment you can´t , change ,remove or updating
 ![alt text](<visibilidade só do Cadastro.png>)
+
+
+Adding People on the lists , because the array
+![alt text](<Listagem de Pessoas , adicionando .png>)
