@@ -62,11 +62,11 @@
     formulario.get('cidade').hasError('minlength')">
 
     <!-- Botão para alterar (visível apenas quando não estiver na página de cadastro) -->
-    <input type="button" value="Alterar"  *ngIf="!btnCadastrar" class="btn btn-warning">
+    <input type="button" value="Alterar" (click)="alterar()" *ngIf="!btnCadastrar" class="btn btn-warning">
     <!-- Botão para remover (visível apenas quando não estiver na página de cadastro) -->
-    <input type="button" value="Remover"  *ngIf="!btnCadastrar"  class="btn btn-danger">
+    <input type="button" value="Remover" (click)="remover()" *ngIf="!btnCadastrar"  class="btn btn-danger">
     <!-- Botão para cancelar (visível apenas quando não estiver na página de cadastro) -->
-    <input type="button" value="Cancelar" *ngIf="!btnCadastrar" class="btn btn-secondary">
+    <input type="button" value="Cancelar" (click)="cancelar()"  *ngIf="!btnCadastrar" class="btn btn-secondary">
 
 </form>
 
@@ -85,11 +85,11 @@
 
     <tbody>
         <tr *ngFor="let v of vetor; index as indice">
-            <td>{{indice}}</td>
+            <td>{{indice + 1}}</td>
             <td>{{v.nome}}</td>
             <td>{{v.idade}}</td>
             <td>{{v.cidade}}</td>
-            <td><button class="btn btn-primary">Selecionar</button></td>
+            <td><button class="btn btn-primary" (click)="selecionar(indice)">Selecionar</button></td>
         </tr>
     </tbody>
 </table>
