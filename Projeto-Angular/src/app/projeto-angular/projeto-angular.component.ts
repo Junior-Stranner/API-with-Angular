@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Pessoa } from '../modelo/Pessoa';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
+
+
 
 @Component({
   selector: 'app-projeto-angular',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule],
+  imports: [ReactiveFormsModule,CommonModule,MatIconModule],
   templateUrl: './projeto-angular.component.html',
   styleUrl: './projeto-angular.component.css'
 })
 export class ProjetoAngularComponent {
+
   
 // Objeto de formulário
 formulario = new FormGroup({
