@@ -1,4 +1,4 @@
-# AngularBasico
+# ProjetoAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
@@ -26,7 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
 required and touched validation
 ![alt text](<Tabela cadastro e lista. validacoes.png>)
 
@@ -39,3 +38,7 @@ visibility just Cadastrar , because this moment you can´t , change ,remove or u
 
 Adding People on the lists , because the array
 ![alt text](<Listagem de Pessoas , adicionando .png>)
+
+
+Add Products on the register page , createing forms reative
+![alt text](<Tela Inicial Criando Produto.png>)
