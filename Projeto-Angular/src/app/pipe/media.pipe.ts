@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MediaPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(objeto:any): number {
+    return (objeto.nota1+objeto.nota2)/2;
   }
 
 }
