@@ -29,8 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 required and touched validation
 ![alt text](<Tabela cadastro e lista. validacoes.png>)
 
+
+
 If a validation is true , he disabled a button
 ![alt text](<Validacao botao desabelita .png>)
+
+
 
 visibility just Cadastrar , because this moment you can´t , change ,remove or updating
 ![alt text](<visibilidade só do Cadastro.png>)
@@ -42,3 +46,7 @@ Adding People on the lists , because the array
 
 Add Products on the register page , createing forms reative
 ![alt text](<Tela Inicial Criando Produto.png>)
+
+
+Select Product 
+![alt text](<Seleciona Produto.png>)
