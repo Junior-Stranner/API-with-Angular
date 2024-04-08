@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Comonente14Component } from './comonente14.component';
+import { PaginaErroComponent } from './pagina-erro.component';
 
-describe('Comonente14Component', () => {
-  let component: Comonente14Component;
-  let fixture: ComponentFixture<Comonente14Component>;
+describe('PaginaErroComponent', () => {
+  let component: PaginaErroComponent;
+  let fixture: ComponentFixture<PaginaErroComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Comonente14Component]
+      imports: [PaginaErroComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(Comonente14Component);
+    fixture = TestBed.createComponent(PaginaErroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
