@@ -50,3 +50,7 @@ Add Products on the register page , createing forms reative
 
 Select Product 
 ![alt text](<Seleciona Produto.png>)
+
+
+Added Pages
+![alt text](Páginação.png)
