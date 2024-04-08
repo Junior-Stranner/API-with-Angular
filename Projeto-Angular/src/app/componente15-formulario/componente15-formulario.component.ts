@@ -19,6 +19,6 @@ export class Componente15FormularioComponent {
 
   //Função de cadastro do componente de formulario
   cadastrarNome(){
-    this.funcao.emit();
+    this.funcao.emit(this.nome);
   }
 }
