@@ -9,4 +9,5 @@ export class MediaPipe implements PipeTransform {
   transform(objeto:any): number {
     return (objeto.nota1+objeto.nota2)/2;
   }
+
 }
