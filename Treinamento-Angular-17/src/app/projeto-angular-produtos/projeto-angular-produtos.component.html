@@ -1,0 +1,56 @@
+<!-- FORMULÁRIO -->
+<form [formGroup]="formulario">
+
+    <!-- VALIDAÇÕES -->
+  <!-- Verifica se o campo "nome" está vazio e foi tocado, exibe uma mensagem de aviso -->
+  @if (formulario.get('nome').hasError('required') && formulario.get('nome').touched) {
+      <p class="alert alert-warning">O campo nome precisa ser preenchido.</p>
+  }
+
+  <!-- Verifica se o campo "nome" tem menos de três caracteres e foi tocado, exibe uma mensagem de aviso -->
+  @if (formulario.get('nome').hasError('minlength') && formulario.get('nome').touched) {
+      <p class="alert alert-warning">O campo nome precisa ter pelo menos três caracteres.</p>
+  }
+
+   <!-- Verifica se o valor do campo "valor" é menor que zero e foi tocado, exibe uma mensagem de aviso -->
+   @if (formulario.get('valor').hasError('min') && formulario.get('valor').touched) {
+      <p class="alert alert-warning">A valor mínima é 0.</p>
+  }
+    <!-- Verifica se o valor do campo "valor" é menor que zero e foi tocado, exibe uma mensagem de aviso -->
+    @if (formulario.get('valor').hasError('max') && formulario.get('valor').touched) {
+      <p class="alert alert-warning">A valor máximo é 0.</p>
+  }
+  
+  
+
+  <input type="number" class="form-control"  formControlName="id"  readonly>
+  <input type="text"   class="form-control" formControlName="nome" placeholder="Nome">
+  <input type="number" class="form-control" formControlName="valor" placeholder="Valor">
+
+  <input type="button" class="btn btn-primary" value="Cadastrar" *ngIf="btnCadastrar" (click)="cadastrar()"> 
+  <input type="button" class="btn btn-warning" value="Alterar"  *ngIf="!btnCadastrar" (click)="alterar()"> 
+  <input type="button" class="btn btn-danger" value="Remover"  *ngIf="!btnCadastrar" (click)="remover()"> 
+
+
+</form>
+
+<!-- TABELA -->
+<table class="table table-striped">
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Valor</th>
+          <th>Selecionar</th>
+      </tr>
+  </thead>
+
+  <tbody>
+      <tr *ngFor="let v of vetor; let indice =index">
+          <td>{{indice+1}}</td>
+          <td>{{v.nome}}</td>
+          <td>{{v.valor}}</td>
+          <td><button class="btn btn-outline-primary" (click)="selecionarProduto(indice)">Selecionar</button></td>
+      </tr>
+  </tbody>
+</table>
